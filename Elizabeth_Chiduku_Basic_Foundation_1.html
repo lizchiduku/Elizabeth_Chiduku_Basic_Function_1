@@ -6,7 +6,7 @@ function getArray (){
     for var (i=1; i<256; i++){
         arr.push (i);
     }
-    return
+    return arr;
 }
 
 ////<!--end function--> variation of function for problem 1
@@ -17,7 +17,7 @@ function getArray (){
     for var (i=1; i<=255; i++){
         arr.push (i);
     }
-    return
+    return arr;
 }
 
 ////<!--end function-->
@@ -39,15 +39,12 @@ return Sum;
 ////<!--end function-->
 
 
-function SumOdd-5000 (){
+function Sum_Odd_5000 (){
     var Sum=0;
-    var i= 1
-    while (i<=5000){
-        if (i>2===1){
-
-        }
-        i++;
-
+    for (var i= 1, i<=5000; i++){
+        if (i%2==1){
+        sum=sum+i;
+    }
     }
     return sum;
 }
@@ -180,7 +177,8 @@ function swap(arr){
 
 function numToStr(arr){
     arr=arr.map(function(elem)){
-
+if (elem<0){
+    return 'Dojo';
     }
     else{
         return elem;
